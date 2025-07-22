@@ -32,14 +32,21 @@ val souls_names = [
 
 
 val souls_toltip = [
-    ["Паук", "окак", "удобно добавлять новые строчки"], 
-    ["Криппер", "окак"], 
-    ["Скелет", "окак", "покак"], 
-    ["Зомби", "окак"]
+    ["§2Минимальная цена", "§2души §4паука§2 - §e999999§3 монет"], 
+    ["§2Минимальная цена", "§2души §4криппера§2 - §e999999§3 монет"], 
+    ["§2Минимальная цена", "§2души §4скелета§2 - §e999999§3 монет"], 
+    ["§2Минимальная цена", "§2души §4зомби§2 - §e999999§3 монет"], 
+
 ] as string[][];
 
 
-//<DraconicEvolution:mobSoul>.displayName = "Душа";
+val souls_shift_toltip = [
+    ["§bДуша дропает:", "§7Нить", "§7Паучий глаз"], 
+    ["§bДуша дропает:", "§7Порох", "§7Голова крипера"],
+    ["§bДуша дропает:", "§7Кость", "§7Стрела", "§7Череп"],
+    ["§bДуша дропает:",  "§7Гнилая плоть", "§7Голова зомби"],
+
+] as string[][];
 
 for i, soul in souls {
     NEI.addEntry(soul);
@@ -47,5 +54,9 @@ for i, soul in souls {
 
     for toltip in souls_toltip[i] {
         souls_only_with_tag[i].addTooltip(toltip);
+    }
+
+    for shift_toltip in souls_shift_toltip[i] {
+        souls_only_with_tag[i].addShiftTooltip(shift_toltip);
     }
 }
