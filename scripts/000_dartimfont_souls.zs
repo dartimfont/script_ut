@@ -1,7 +1,7 @@
 import mods.nei.NEI;
 import minetweaker.item.IIngredient;
-import minetweaker.item.IItemDefinition;
-import minetweaker.item.IItemCondition;
+// import minetweaker.item.IItemDefinition;
+// import minetweaker.item.IItemCondition;
 import minetweaker.item.IItemStack;
 
 
@@ -48,6 +48,12 @@ val souls_shift_toltip = [
 
 ] as string[][];
 
+
+// <DraconicEvolution:mobSoul>.addTooltip("§7-------------------------------");
+// <DraconicEvolution:mobSoul>.addTooltip("§2Продажа §bЛЮБЫХ §2душ только за §4монеты");
+// <DraconicEvolution:mobSoul>.addTooltip("§7-------------------------------");
+
+
 for i, soul in souls {
     NEI.addEntry(soul);
     NEI.overrideName(soul, souls_names[i]);
@@ -55,6 +61,8 @@ for i, soul in souls {
     for toltip in souls_toltip[i] {
         souls_only_with_tag[i].addTooltip(toltip);
     }
+
+    souls_only_with_tag[i].addTooltip("§eЗажмите §4Shift §eдля просмотра дропа");
 
     for shift_toltip in souls_shift_toltip[i] {
         souls_only_with_tag[i].addShiftTooltip(shift_toltip);

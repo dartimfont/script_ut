@@ -8,6 +8,7 @@ lang
 libraries
 logs
 mods
+opframe_cache
 resourcepacks
 saves
 shaderpacks
@@ -17,3 +18,4 @@ optionsof.txt
 usernamecache.json
 version_hashes.json
 wipe.bin
+output.jpg

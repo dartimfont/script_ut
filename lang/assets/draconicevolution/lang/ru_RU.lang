@@ -225,9 +225,13 @@ info.draconicCore1.txt=Можно использовать для стабили
 // info.mobSoul2.txt=Или нажать Shift+ПКМ, чтобы заспавнить это существо
 // info.mobSoul3.txt=(Одноразовая)
 
-info.mobSoul1.txt=§3Можно купить в §6F4
-info.mobSoul2.txt=§3Продажа §bЛЮБЫХ §5душ §4только §3за §eмонеты
-info.mobSoul3.txt=§3Зажмите §4Shift §3для просмотра списка дропа
+// info.mobSoul1.txt=§3Можно купить в §6F4
+// info.mobSoul2.txt=§3Продажа §bЛЮБЫХ §5душ §4только §3за §eмонеты
+// info.mobSoul3.txt=§3Зажмите §4Shift §3для просмотра списка дропа
+
+info.mobSoul1.txt=§7-------------------------------
+info.mobSoul2.txt=§2Продажа §bЛЮБЫХ §2душ только за §4монеты
+info.mobSoul3.txt=§7-------------------------------
 
 info.arrowInfo.txt=Болезненная прогулка
 info.arrowInfo0.txt=Слишком тяжёлая для обычного лука
